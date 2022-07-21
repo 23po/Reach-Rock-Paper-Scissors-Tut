@@ -38,11 +38,10 @@ await Promise.all([
             console.log(`Bob accepts the wager of ${fmt(amt)}.`);
         },
     }),
-
+]);
 
 const afterAlice = await getBalance(accAlice);
-const afterBob = await getBalance(acBob);
+const afterBob = await getBalance(accBob);
 
 console.log(`Alice went from ${beforeAlice} to ${afterAlice}.`);
-console.log(`Bob went from ${beforeBob} to `)
-]);
+console.log(`Bob went from ${beforeBob} to ${afterBob}.`);
