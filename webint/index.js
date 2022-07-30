@@ -68,7 +68,7 @@ class Deployer extends Player {
         const ctcInfoStr = JSON.stringify(await ctc.getInfo(), null, 2);
         this.setState({view: 'WaitingForAttacher', ctcInfoStr});
     }
-    render() { return renderView(this, DeploerViews); }
+    render() { return renderView(this, DeployerViews); }
     }
 class Attacher extends Player {
     constructor(props) {
